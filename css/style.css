@@ -1,0 +1,220 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  cursor: url("../image/curseurplume.png"), pointer;
+
+}
+@media (min-aspect-ratio : 16/9) {
+  .videoBG {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio : 16/9) {
+  .videoBG {
+      width: auto;
+      height: 100%;
+  }
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+
+
+   .blocHorizontal {
+  display: flex;
+  flex-direction: row;
+  width: 1310vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.container {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-x: hidden;
+  -ms-overlow-style: none;
+  scrollbar-width: none;
+}
+.videoBG {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.two {
+  background: none;
+  width: 110vw;
+}
+.three {
+  background: none;
+  width: 110vw;
+}
+.four {
+  background: none;
+  width: 110vw;
+}
+.five {
+  background: none;
+  width: 110vw;
+}
+.six {
+  background: none;
+  width: 110vw;
+}
+.seven {
+  background: none;
+  width: 110vw;
+}
+.eight {
+  background: none;
+  width: 110vw;
+}
+.nine {
+  background: none;
+  width: 110vw;
+}
+.ten {
+  background: none;
+  width: 110vw;
+}
+.eleven {
+  background: none;
+  width: 110vw;
+}
+.twelve {
+  background: none;
+  width: 110vw;
+}
+
+.titre1 {
+  text-align: center;
+  font-size: 42px;
+}
+
+.text {
+  line-height: 2em;
+  font-family: 'Parisienne', cursive;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-left: -35%;
+  width: 1000px;
+  height: 850px; 
+  line-height: 3em; 
+  overflow:scroll;
+  border: none; 
+  padding: 5px;
+  margin-top: -80%;
+}
+
+
+#preloader{
+  background: whitesmoke url(../media/loader2.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 15s;
+} 
+@keyframes fade {
+  0%{
+      opacity : 1;
+  }
+  80%{
+      opacity: 0;
+  }
+  100%{
+      z-index: -2;
+      opacity: 0;
+  }
+}
+
+.slidee {
+	float: left;
+  
+}
+.imgs{
+  height: 450px;
+  width: 700px;
+}
+
+.slides{
+	width: calc(700px*6);
+	animation: glisse 20s infinite;
+}
+.slider{
+	width: 700px;
+	overflow: hidden;
+	margin: 150px auto;
+	margin-top: -10%; 
+	margin-right: -40%;
+}
+@keyframes glisse {
+	0%{
+		transform: translateX(0);
+	}
+	8%{
+		transform: translateX(0);
+	}
+	15%{
+		transform: translateX(-700px);
+	}
+	23%{
+		transform: translateX(-700px);
+	}
+	31%{
+		transform: translateX(-1400px);
+	}
+	40%{
+		transform: translateX(-1400px);
+	}
+	48%{
+		transform: translateX(-2100px);
+	}
+    56%{
+		transform: translateX(-2100px);
+	}
+    64%{
+		transform: translateX(-2800px);
+	}
+    72%{
+		transform: translateX(-2800px);
+	}
+    80%{
+		transform: translateX(-3500px);
+	}
+    88%{
+		transform: translateX(-3500px);
+	}
+    0%{
+		transform: translateX(0);
+	}
+}

@@ -1,0 +1,429 @@
+body {
+    font-family: 'Parisienne', cursive;
+    overflow: hidden;
+}
+#preloader{
+    background: whitesmoke url(../media/loader2.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation-name: fade;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 12s;
+}
+
+
+@keyframes fade {
+    0%{
+        opacity : 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        z-index: -2;
+        opacity: 0;
+    }
+}
+
+
+.videoBG {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@media (min-aspect-ratio : 16/9) {
+    .videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio : 16/9) {
+    .videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+    
+
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.boutton{
+    text-align: center;
+    margin-right: 33%;
+    margin-left: 33%;
+    animation-name: boutton;
+    animation-delay: 102s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+    opacity: 0;
+}
+
+@keyframes boutton {
+    0%{
+        opacity : 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.resumer{
+    width: 10%;
+    background-color: #F2E7BF;
+
+    transition: 2s;
+    font-size: 0px;
+    border-radius: 20px;
+    border-top: black outset 3px;
+    border-left: black outset 3px;
+    border-bottom: grey inset 6px;
+    border-right: grey inset 5px;
+    animation-name: resumer;
+    animation-delay: 102s;
+    animation-duration:8s;
+    animation-fill-mode: backwards;
+}
+
+.resumer:hover{
+    position : absolute;
+    width: 25%;
+    height:auto ;
+    transform: 5s translatex(200px) translateZ(100px);
+    font-size: 14px;
+    border-radius: 10px;
+
+    border-top: white inset 6px;
+    border-left: white inset 6px;
+    border-bottom: black outset 3px;
+    border-right: black outset 3px;
+
+}
+
+@keyframes resumer {
+    0%{
+        transform: translateX(-150%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.texte1 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte1;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 14s;
+    opacity: 0;
+
+}
+@keyframes texte1{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.texte2 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte2;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+    opacity: 0;
+
+}
+@keyframes texte2{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.texte3 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte3;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 28s;
+    opacity: 0;
+
+}
+@keyframes texte3{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.texte4 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte4;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 38s;
+    opacity: 0;
+
+}
+@keyframes texte4{
+    0%{
+        opacity: 0;
+
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.texte5 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte5;
+    animation-duration: 13s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 53s;
+    opacity: 0;
+
+}
+@keyframes texte5{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.texte6 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte6;
+    animation-duration: 13s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 65s;
+    opacity: 0;
+
+}
+@keyframes texte6{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.texte7{
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte7;
+    animation-duration: 13s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 73s;
+    opacity: 0;
+
+}
+@keyframes texte7{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.texte8 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte8;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 82s;
+    opacity: 0;
+
+}
+@keyframes texte8{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.texte9 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte9;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 95s;
+    opacity: 0;
+
+}
+@keyframes texte9{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.texte10 {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10%;  
+    font-size: 35px;  
+    animation-name: texte10;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 99s;
+    opacity: 0;
+
+}
+@keyframes texte10{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
